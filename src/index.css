@@ -1,13 +1,128 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  ---first-primary-colour: #201E20;
+  ---second-primary-colour: #DDC3A5;
+  ---third-primary-colour: #E0A96D;
+
+  --transition: all 300ms ease;
+}
+
+/* Header Styling */
+.header{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+  position: relative;
+  margin-top: 0;
+  background: var(---second-primary-colour);
+}
+
+/* Logo Styling */
+.logo{
+   width: 30%;
+}
+
+/* Navbar Styling */
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70%;
+}
+
+.nav-bar .home-link{
+  background: var(---first-primary-colour);
+  color: var(---third-primary-colour);
+}
+
+.nav-bar li{
+  list-style-type: none;
+  padding: 10px 40px;
+}
+
+
+/* Footer Styling */
+.footer{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  height: 400px;
+  background: var(---second-primary-colour);
+  padding: 1em 2em;
+  width: 100%;
+}
+
+
+/* First Section styling in Footer */
+.section-one{
+  width: 25%;
+}
+
+.section-one .random-text{
+  text-align: left;
+  width: 15em;
+}
+
+.section-one div{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+
+.section-one, .section-two, .section-three{
+  width: 30%;
+}
+
+/* Second section stylin in Footer */
+.section-two{
+  width: 25%;
+}
+.section-two ul{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-two ul li{
+  padding-bottom: 2em;
+}
+
+.section-two ul h4{
+  text-decoration: underline;
+  padding-bottom: 1em;
+}
+
+.section-three{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.section-three .copyright-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
